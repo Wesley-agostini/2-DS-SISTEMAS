@@ -1,109 +1,80 @@
-* {
-    margin: 0;
-    padding: 0;
+@import url("css/footer.css");
+@import url("css/header.css");
+@import url("css/produtos.css");
+
+*{
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-.body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-.navbar {
+.container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 1rem 2rem;
-    position: relative;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+.home{
+    width: 4vh;
+    height: 4vh;
 }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21;
-    cursor: pointer;
+.propaganda{
+    width: 49vh;
+    height: 17vh;
 }
 
-.bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+.titulo{
+    color: #ED9F0F;
+    text-decoration-line: underline;
+    top:0%;
+    left:0%;
+    transform: translate(5%,4%);
+
 }
 
-.nav-menu {
-    display: flex;
-    list-style: none;
+.square{
+    background-color: #F0C0E6;
+    border: solid 2px rgb(184, 116, 201);
+    border-radius: 20px;
+    padding: 3vh;
+    top:0%;
+    left:0%;
+    transform: translate(0%,-9%);
+    color: #5e0071;
+    margin: 2vh;
+    margin-top: 10vh;
+    font-size: x-large;
 }
 
-.nav-item {
-    margin-left: 2rem;
+.square2{
+    background-color: #F0C0E6;
+    border: solid 2px rgb(184, 116, 201);
+    border-radius: 20px;
+    padding: 5vh;
+    top:0%;
+    left:0%;
+    transform: translate(0%,10%);
+    color: #5e0071;
+    margin: 2vh;
+    margin-bottom: 10vh;
+    font-size: large;
 }
 
-.nav-link {
-color: white;
-text-decoration: none;
-transition: color 0.3s ease;
+.volte{
+    top:0vh;
+    left:0vh;
+    transform: translate(40vh,1vh);
+    color: #5e0071;
 }
 
-.nav-link:hover {
-    color: #ddd;
+.titulo_pedido{
+    color: #ED9F0F;
+    text-align: center;
+    padding: 5vh 0vh 0vh 0vh;
+    font-size: 7vh;
 }
 
-.main {
-    padding: 2rem;  
-}
-
-/* Media Query para dispostitivos móveis*/
-@media (max-widht: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem 0;
-        clip-path: circle(0px at 90% -10%);
-        transition: clip-path 0.5s ease-in-out;
-        pointer-events: none;
-    }
-
-    .nav-menu.active {
-        clip-path: circle(100px at 90% -10%);
-        pointer-events: all;
-    }
-
-    .nav-item {
-        margin: 1rem 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
-    }
+.botao-compra{
+    background-color: #B37ECC;
+    border: solid #5e0071 0.05vh;
+    font-size: xx-large;
+    
 }
